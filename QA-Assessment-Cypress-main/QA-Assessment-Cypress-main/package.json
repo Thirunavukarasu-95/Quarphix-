@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "node": "^17.3.1",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "tests": "jasmine src/shop-spec.js"
+  }
+}

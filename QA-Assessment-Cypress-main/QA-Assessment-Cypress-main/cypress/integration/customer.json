@@ -1,0 +1,36 @@
+// customer.js
+
+export class Customer {
+  constructor(email, password) {
+    this.email = email;
+    this.password = password;
+  }
+
+  getEmail() {
+    return this.email;
+  }
+
+  getPassword() {
+    return this.password;
+  }
+}
+
+export class CustomerBuilder {
+  constructor() {
+    this.customer = new Customer('', ''); // Initialize with empty values, update as needed
+  }
+
+  setEmail(email) {
+    this.customer.email = email;
+    return this;
+  }
+
+  setPassword(password) {
+    this.customer.password = password;
+    return this;
+  }
+
+  build() {
+    return this.customer;
+  }
+}
